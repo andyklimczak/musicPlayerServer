@@ -6,6 +6,7 @@ class SongController < ApplicationController
     user = User.find_by(user_params)
     song = Song.find_or_create_by(song_params)
     user.songs << song
+
     render json: song
   end
   private
