@@ -1,9 +1,20 @@
 class UserController < ApplicationController
-  # post /login
-  # email, password
-  # returns user if password is valid, else nil
+  #POST create_user
+  #params user params
+  #returns the user
+  def create
+    user = User.create(email: params[:email], name: params[:name])
+    if user.save
+      render json: user
+    else
+      render json: nil
+    end
+  end
+  # POST get_user
+  # params  email
+  # returns the user
   def get_user
-    user = User.find_or_create_by(email: params[:email], name: params[:name])
+    user = User.find_by(email: params[:email])
     if not user.nil?
       render json: user
     else
