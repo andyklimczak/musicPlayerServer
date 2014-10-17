@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   post 'get_user' => 'user#get_user'
   post 'set_song_for_user' => 'song#set_song_for_user'
   post 'get_user_artists' => 'song#get_user_artists'
+  get 'check' => 'stuff#check'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
