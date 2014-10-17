@@ -1,28 +1,23 @@
-== README
+= music player readme
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+url: musicplayerserver.herokuapp.com
 
-Things you may want to cover:
+POST
+/create_user
+params = email, name
+returns the user
 
-* Ruby version
+POST
+/get_user
+params = email
+returns all of the user's details
 
-* System dependencies
+POST
+/set_song_for_user
+params = email, artist, title
+returns the song
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+POST
+/get_user_artists
+params = email
+returns the user's songs' artists
