@@ -5,7 +5,7 @@ url: musicplayerserver.herokuapp.com
 GET
 /check
 makes sure the server it awake
-returns the first user for right now
+returns "stuff"
 
 POST
 /create_user
