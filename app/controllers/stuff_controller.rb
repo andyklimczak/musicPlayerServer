@@ -1,5 +1,5 @@
 class StuffController < ApplicationController
   def check
-    render json: Date.now
+    render json: DateTime.now
   end
 end
