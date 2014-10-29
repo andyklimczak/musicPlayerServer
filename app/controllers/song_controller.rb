@@ -1,6 +1,6 @@
 class SongController < ApplicationController
   # POST set song to user
-  # params = user: {email, name}, song: {title, artist}
+  # params = facebook_id, artist, title, album
   # returns the song
   def set_song_for_user
     user = User.find_by(facebook_id: params[:facebook_id])
@@ -10,7 +10,7 @@ class SongController < ApplicationController
     render json: song
   end
   #POST get user songs
-  # params = email, name
+  # params = facebook_id
   #returns list of artist the user has listened to
   def get_user_artists
     user = User.find_by(facebook_id: params[:facebook_id])

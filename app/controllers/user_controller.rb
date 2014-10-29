@@ -11,7 +11,7 @@ class UserController < ApplicationController
     end
   end
   # POST get_user
-  # params  email
+  # params facebook_id
   # returns the user
   def get_user
     user = User.find_by(facebook_id: params[:facebook_id])
