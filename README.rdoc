@@ -10,23 +10,23 @@ returns "stuff"
 POST
 /create_user
 creates the user
-params = email, name
+params = email, name, facebook_id
 returns the user
 
 POST
 /get_user
 get user's details
-params = email
+params = facebook_ic
 returns all of the user's details
 
 POST
 /set_song_for_user
 give a user a song
-params = email, artist, title
+params = facebook_id, artist, title
 returns the song
 
 POST
 /get_user_artists
 get all of the artists the user has listened to
-params = email
+params = facebook_id
 returns the user's songs' artists
