@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   #post 'get_lyrics'=>'lyrics#get_lyrics'
-  post 'create_user' => 'user#create'
+  put 'create_user' => 'user#create'
   post 'get_user' => 'user#get_user'
   post 'set_song_for_user' => 'song#set_song_for_user'
   post 'get_user_artists' => 'song#get_user_artists'

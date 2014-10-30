@@ -1,5 +1,5 @@
 class UserController < ApplicationController
-  #POST create_user
+  #PUT create_user
   #params user params
   #returns the user
   def create

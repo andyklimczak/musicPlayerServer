@@ -7,7 +7,7 @@ GET
 makes sure the server it awake
 returns "stuff"
 
-POST
+PUT
 /create_user
 creates the user
 params = email, name, facebook_id
