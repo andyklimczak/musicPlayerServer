@@ -4,6 +4,8 @@ class UserController < ApplicationController
   #returns the user
   def create
     user = User.create(facebook_id: params[:facebook_id], name: params[:name], email: params[:email])
+    logger = Logger.new('log/andy.log')
+    logger.debug(user)
     if user.save
       render json: user
     else
@@ -14,7 +16,9 @@ class UserController < ApplicationController
   # params facebook_id
   # returns the user
   def get_user
-    user = User.find_by(facebook_id: params[:facebook_id])
+    user = User.find_by(facebook_id: params[:facebook_id]
+    logger = Logger.new('log/andy.log')
+    logger.debug(user))
     if not user.nil?
       render json: user
     else
