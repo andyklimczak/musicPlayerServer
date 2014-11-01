@@ -7,17 +7,11 @@ GET
 makes sure the server it awake
 returns "stuff"
 
-PUT
-/create_user
+POST
+/log_user
 creates the user
 params = email, name, facebook_id
 returns the user
-
-POST
-/get_user
-get user's details
-params = facebook_ic
-returns all of the user's details
 
 POST
 /set_song_for_user
