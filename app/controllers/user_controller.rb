@@ -9,4 +9,10 @@ class UserController < ApplicationController
     end
     render json: user
     end
+
+  #post update_session
+  def update_session
+    p "-------------------------"
+    p params
+  end
   end

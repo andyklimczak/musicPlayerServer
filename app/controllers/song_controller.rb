@@ -21,4 +21,9 @@ class SongController < ApplicationController
     artist_list.uniq!
     render json: artist_list
   end
+
+  #post update_session
+  def update_session
+    p params
+  end
 end
