@@ -23,7 +23,11 @@ class SongController < ApplicationController
   end
 
   #post update_session
+  #params: id, song : {title : count}, artist : { name : count }
   def update_session
-    p params
+    #user = User.where(facebook_id: params[:id]).first
+    p params[:songs]
+    p params[:artists]
+    end
   end
 end
