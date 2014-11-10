@@ -21,13 +21,4 @@ class SongController < ApplicationController
     artist_list.uniq!
     render json: artist_list
   end
-
-  #post update_session
-  #params: id, song : {title : count}, artist : { name : count }
-  def update_session
-    #user = User.where(facebook_id: params[:id]).first
-    p params[:songs]
-    p params[:artists]
-    end
-  end
 end
