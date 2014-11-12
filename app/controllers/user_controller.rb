@@ -10,6 +10,6 @@ class UserController < ApplicationController
     p user.songs_hash
     p user.artists_hash
     # render :json => user.songs_hash
-    render text: {songs: user.songs_hash, artists: user.artists_hash}
+    render text: {"songs": user.songs_hash, "artists": user.artists_hash}
   end
 end
