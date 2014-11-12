@@ -7,12 +7,9 @@ class UserController < ApplicationController
     if user.nil?
       user = User.create(facebook_id: params[:facebook_id], name: params[:name], email: params[:email])
     end
-    render json: user
-    end
-
-  #post update_session
-  def update_session
-    p "-------------------------"
-    p params
+    render json: => {
+      songs: user.songs_hash.as_json,
+      artists: user.artists_hash.as_json
+    }
   end
-  end
+end
