@@ -8,6 +8,5 @@ class UserController < ApplicationController
       user = User.create(facebook_id: params[:facebook_id], name: params[:name], email: params[:email])
     end
     render :json => {:songs => user.songs_hash, :artists => user.artists_hash }
-      # :songs_hash => user.songs_hash.as_json + :artists_hash => user.artists_hash.as_json
   end
 end
