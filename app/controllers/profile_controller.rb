@@ -6,7 +6,7 @@ class ProfileController < ApplicationController
     p "i am here"
     # songs = JSON.parse params[:songs]
     # artists = JSON.parse params[:artists]
-    # user = User.where(facebook_id: params[:facebook_id]).first
+    user = User.where(facebook_id: params[:facebook_id]).first
     p params
     songs_hash = JSON.parse params[:songs]
     artists_hash = JSON.parse params[:artists]
