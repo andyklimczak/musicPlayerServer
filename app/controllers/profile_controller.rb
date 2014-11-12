@@ -13,6 +13,6 @@ class ProfileController < ApplicationController
     user.update(songs_hash: songs_hash.to_s)
     user.update(artists_hash: artists_hash.to_s)
     p songs_hash.to_s
-    p artist_hash.to_s
+    p artists_hash.to_s
   end
 end
