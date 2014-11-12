@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   #post 'get_lyrics'=>'lyrics#get_lyrics'
+  post 'log_user' => 'user#log_user'
   post 'update_session' => 'profile#update_session'
   get 'check' => 'stuff#check'
   # The priority is based upon order of creation: first created -> highest priority.
