@@ -9,6 +9,7 @@ class ProfileController < ApplicationController
     artists_hash = JSON.parse params[:artists]
     p songs_hash
     p artists_hash
+    p "update user"
     user.update(songs_hash: songs_hash.to_s)
     user.update(artists_hash: artists_hash.to_s)
     p songs_hash.to_s
