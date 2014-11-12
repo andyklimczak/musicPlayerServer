@@ -8,8 +8,7 @@ class ProfileController < ApplicationController
     # artists = JSON.parse params[:artists]
     # user = User.where(facebook_id: params[:facebook_id]).first
     p params
-    p JSON.parse params[:songs]
-    test = JSON.parse params
+    test = JSON.parse params[:songs]
     p test
     p test.class.name
     # songs.each do |song_pair|
