@@ -9,6 +9,7 @@ class UserController < ApplicationController
     end
     p user.songs_hash
     p user.artists_hash
-    render :json => {:songs => user.songs_hash, :artists => user.artists_hash }
+    render :json user.songs_hash
+    # render :json => {:songs => user.songs_hash, :artists => user.artists_hash }
   end
 end
