@@ -12,7 +12,7 @@ class ProfileController < ApplicationController
     songs.each do |song_pair|
       p song_pair
     end
-    arists.each do |artist_pair|
+    artists.each do |artist_pair|
       p artist_pair
     end
   end
