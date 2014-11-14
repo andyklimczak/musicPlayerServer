@@ -1,4 +1,6 @@
-= music player readme
+= music player readme (Group 1, champion 9:10-10:05 mwf)
+
+This is the accompanying server that works along with our android app. The server is hosted on heroku. The server stores the consistant data of the user's top played songs and artists. This information is on the profile page.
 
 url: musicplayerserver.herokuapp.com
 
