@@ -7,22 +7,17 @@ url: musicplayerserver.herokuapp.com
 GET
 /check
 makes sure the server it awake
-returns "stuff"
+returns the current server time
 
 POST
 /log_user
-creates the user
+either creates a user if a user with the facebook id doesn't exist
+or returns the user with that facebook_id
 params = email, name, facebook_id
 returns the user
 
 POST
-/set_song_for_user
-give a user a song
-params = facebook_id, artist, title
-returns the song
+/update_session
+finds the user by facebook id, then updates the user's artist and song hash to be the current top songs and artists
+params = facebook_id, songs: {title1: count1, title2:count, ... }, artists : {artist1: artistcount1, artist2: artistcount2, ...}
 
-POST
-/get_user_artists
-get all of the artists the user has listened to
-params = facebook_id
-returns the user's songs' artists
